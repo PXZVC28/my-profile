@@ -1,23 +1,42 @@
-.banner
-{
-	background-image: url("./kedge-bs.jpg");
-	width: 700px;
-	padding: 20px;
+.banner {
+    background-image: url("./kedge-bs.jpg");
+    background-size: cover; /* Pour s'assurer que l'image couvre toute la bannière */
+    background-position: center; /* Centrer l'image */
+    width: 100%; /* Laisser la bannière s'adapter à la largeur de l'écran */
+    max-width: 700px; /* Limiter la largeur maximale */
+    padding: 20px;
+    margin: 0 auto; /* Centrer la bannière */
 }
 
-.banner h1
-{
-	color:  white;
-	font-size: 50px;
-
+.banner h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
 }
 
-.banner h2
-{
-	color: whitesmoke;
-	margin-right: 700px;
+.banner h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin-right: 0; /* Retirer la marge excessive */
 }
 
+@media (max-width: 760px) {
+    .banner h1 {
+        font-size: 40px; /* Réduire la taille du texte pour les petits écrans */
+    }
+    .banner h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner h1 {
+        font-size: 32px;
+    }
+    .banner h2 {
+        font-size: 16px;
+    }
+}
 
 body{
 	background: #F7F9FC;
@@ -53,10 +72,23 @@ a:hover {
 	color: black;
 }
 
-.container{
-	width: 700px;
-	margin: 40px auto;
+.container {
+    width: 700px;
+    margin: 40px auto;
 }
+
+@media (max-width: 760px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
+
 .card-white{
 	background-color: white;
 	padding: 40px;
